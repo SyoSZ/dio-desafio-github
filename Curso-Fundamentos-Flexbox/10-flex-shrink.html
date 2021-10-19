@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -77,4 +78,85 @@
         <div class="item s2 fg1">D</div>
     </div>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex shrink</title>
+    <style>
+        .container{
+            display: flex;
+            border: 3px solid black;
+            max-width: 350px;
+        }
+
+        .item{
+            margin: 5px;
+            background-color: chocolate;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .s1{
+            flex-shrink: 1;
+        }
+
+        .s2{
+            flex-shrink: 2;
+            flex-basis: 100px;
+        }
+
+        .s3{
+            flex-shrink: 3;
+            flex-basis: 100px;
+        }
+
+        .s0{
+            flex-shrink: 0;
+            flex-basis: 100px;
+        }
+
+        .fg1{
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <p>shrink:1</p>
+    <div class="container">
+        <div class="item s1 fg1">A</div>
+        <div class="item s1 fg1">B</div>
+        <div class="item s1 fg1 ">C</div>
+        <div class="item s1 fg1">D</div>
+        <div class="item s1 fg1">E</div>
+    </div>
+
+    <p>shrink:1</p>
+    <div class="container">
+        <div class="item s1 fg1">A</div>
+        <div class="item s1 fg1">Lorem Ipsum Is Something</div>
+        <div class="item s1 fg1 ">C</div>
+        <div class="item s1 fg1">D</div>
+    </div>
+
+    <p>shrink:0 + basis 100px</p>
+    <div class="container">
+        <div class="item s0 fg1">A</div>
+        <div class="item s0 fg1">Lorem Ipsum Is Something</div>
+        <div class="item s0 fg1 ">SASJ ASJDU JASD</div>
+        <div class="item s0 fg1">D</div>
+    </div>
+
+    <p>shrink:alternado/basis 100px</p>
+    <div class="container">
+        <div class="item s1 fg1">A</div>
+        <div class="item s3 fg1">Lorem Ipsum Is Something</div>
+        <div class="item s2 fg1 ">SASJ ASJDU JASD</div>
+        <div class="item s2 fg1">D</div>
+    </div>
+</body>
+>>>>>>> 1de9b5ee2960c750297d2bfd9596862079f0a93d
 </html>
